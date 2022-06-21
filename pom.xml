@@ -29,6 +29,7 @@
         <module>tencent-discovery</module>
         <module>tencent-rate-limit</module>
         <module>tencent-circuitbreaker</module>
+        <module>tencent-router</module>
     </modules>
     <build>
         <plugins>

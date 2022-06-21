@@ -1,8 +1,10 @@
-server:
-  port: 8089
 spring:
   application:
     name: lengleng-circuitbreaker-@artifactId@
   cloud:
     polaris:
       address: grpc://183.47.111.80:8091
+    tencent:
+      metadata:
+        content:
+          version: dev

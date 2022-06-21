@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: lengleng-circuitbreaker-tencent-circuitbreaker-provider
+  cloud:
+    polaris:
+      address: grpc://183.47.111.80:8091
+server:
+  port: 8012

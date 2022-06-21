@@ -12,6 +12,7 @@ public class ProviderController {
 
 	@GetMapping("/provider")
 	public String provider(@RequestParam String name) {
+		int i = 1 / 0;
 		return name;
 	}
 

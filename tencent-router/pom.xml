@@ -7,15 +7,17 @@
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>tencent-circuitbreaker</artifactId>
-    <name>tencent-circuitbreaker</name>
+
+    <artifactId>tencent-router</artifactId>
+
+    <name>tencent-router</name>
 
     <modules>
-        <module>tencent-circuitbreaker-consumer</module>
-        <module>tencent-circuitbreaker-provider</module>
-        <module>tencent-circuitbreaker-provider-error</module>
+        <module>tencent-router-consumer</module>
+        <module>tencent-router-provider</module>
+        <module>tencent-router-provider2</module>
     </modules>
+
 </project>

@@ -12,7 +12,7 @@ public class ProviderController {
 
 	@GetMapping("/provider")
 	public String provider(@RequestParam String name) {
-		return name;
+		return "dev";
 	}
 
 }
