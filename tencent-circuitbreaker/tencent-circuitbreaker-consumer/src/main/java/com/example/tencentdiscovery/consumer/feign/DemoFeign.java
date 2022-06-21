@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author lengleng
  * @date 2022/6/21
  */
-@FeignClient(contextId = "demoFeign", value = "lengleng-circuitbreaker-tencent-circuitbreaker-provider")
+@FeignClient(contextId = "demoFeign", value = "lengleng-circuitbreaker-tencent-circuitbreaker-provider",
+		fallback = DemoFeignFallback.class)
 public interface DemoFeign {
 
 	@GetMapping("/provider")
