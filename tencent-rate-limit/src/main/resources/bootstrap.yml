@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: lengleng_tencent-rate-limit
+  cloud:
+    polaris:
+      address: grpc://183.47.111.80:8091
+      namespace: default
+      ratelimit:
+        reject-http-code: 403
+        reject-request-tips: "hellO  rate limit"

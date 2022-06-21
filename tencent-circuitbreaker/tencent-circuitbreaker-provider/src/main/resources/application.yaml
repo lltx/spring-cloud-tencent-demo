@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: lengleng-circuitbreaker-@artifactId@
+  cloud:
+    polaris:
+      address: grpc://183.47.111.80:8091

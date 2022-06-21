@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>spring-cloud-tencent-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <spring.checkstyle.plugin>0.0.32</spring.checkstyle.plugin>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>tencent-config</module>
+        <module>tencent-discovery</module>
+        <module>tencent-rate-limit</module>
+        <module>tencent-circuitbreaker</module>
+    </modules>
+    <build>
+        <plugins>
+            <!--代码格式插件，默认使用spring 规则-->
+            <plugin>
+                <groupId>io.spring.javaformat</groupId>
+                <artifactId>spring-javaformat-maven-plugin</artifactId>
+                <version>${spring.checkstyle.plugin}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
